@@ -21,7 +21,7 @@ k=1
 actions(q)
 for x in cadena:
     if x == 1:
-        q=
+        q=(-1)**k
         actions(q)
     else:
         actions(q)
