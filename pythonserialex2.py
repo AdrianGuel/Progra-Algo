@@ -1,6 +1,6 @@
 import serial
 import matplotlib.pyplot as plt
-
+import numpy as np
 plt.ion()
 fig=plt.figure()
 
@@ -12,7 +12,7 @@ i=0
 ser = serial.Serial('/dev/ttyACM0',9600)
 ser.close()
 ser.open()
-while i<500:
+while True:
 
     data = ser.readline()
     print(data.decode())
