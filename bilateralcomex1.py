@@ -19,9 +19,9 @@ while True:
     serialcomm.write(i.encode())
 
     time.sleep(0.1)
-    s=serialcomm.readline()#.decode('ascii')
+    s=serialcomm.readline().decode('ascii')
     for i in range(0,len(s)-1,2):
-        print(int(s[i])*10 + int(s[i + 1]))
+        print(chr(int(s[i])*10 + int(s[i + 1])))
 
 
 serialcomm.close()
